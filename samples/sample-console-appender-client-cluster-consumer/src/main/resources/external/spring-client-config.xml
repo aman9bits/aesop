@@ -145,7 +145,7 @@
 					<property name="id" value="1" />
 					<property name="clusterName" value="pz_console_appender_cluster" />
 					<property name="zkAddr" value="localhost:2181" />
-					<property name="numPartitions" value="2" />
+					<property name="numPartitions" value="200" />
 					<property name="quorum" value="1" />
 					<property name="zkSessionTimeoutMs" value="3000" />
 					<property name="zkConnectionTimeoutMs" value="3000" />

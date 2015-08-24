@@ -17,16 +17,19 @@ import java.net.URL;
 public class ApiCallerDeleteDataLayer extends DeleteDestinationStoreProcessor {
 
     private static final Logger LOGGER = LogFactory.getLogger(ApiCallerDeleteDataLayer.class);
+    private URL url;
+    public ApiCallerDeleteDataLayer(URL url) {
+        this.url=url;
+    }
+
     @Override
     protected  ConsumerCallbackResult delete(AbstractEvent event) {
         try {
-            URL url=new URL("http://localhost:8084/count");
             final String USER_AGENT = "Mozilla/5.0";
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("POST");
             con.setRequestProperty("User-Agent", USER_AGENT);
             con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
-            //String urlParameters = event.toString();
             String urlParameters = "";
             // Send post request
             con.setDoOutput(true);
@@ -49,19 +52,19 @@ public class ApiCallerDeleteDataLayer extends DeleteDestinationStoreProcessor {
                     LOGGER.info("API called successfully");
                     return ConsumerCallbackResult.SUCCESS;
                 default:
-                    LOGGER.info("!!!!!!API COULD NOT BE CALLED!!!!!!"+responseCode);
+                    LOGGER.info("API COULD NOT BE CALLED!! Response Code:"+responseCode);
                     return ConsumerCallbackResult.ERROR;
             }
         }
         catch (ProtocolException e) {
             e.printStackTrace();
-            LOGGER.info("!!!!!!<<<API COULD NOT BE CALLED>>>!!!!!!ProtocolException~!~~~~");
+            LOGGER.info("API COULD NOT BE CALLED!! ProtocolException Occurred");
         }
         catch (IOException e) {
             e.printStackTrace();
-            LOGGER.info("!!!!!!<<<API COULD NOT BE CALLED>>>!!!!!!IOException~~~~~");
+            LOGGER.info("API COULD NOT BE CALLED!! IOException Occurred");
         }
-        LOGGER.info("!!!!!!<<<API COULD NOT BE CALLED>>>!!!!!! Some shit happened");
+        LOGGER.info("API COULD NOT BE CALLED!! Some shit happened");
         return ConsumerCallbackResult.ERROR;
     }
 }

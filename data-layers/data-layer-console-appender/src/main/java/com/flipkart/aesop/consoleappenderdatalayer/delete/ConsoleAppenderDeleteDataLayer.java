@@ -30,7 +30,7 @@ public class ConsoleAppenderDeleteDataLayer extends DeleteDestinationStoreProces
 
 	@Override
 	protected  ConsumerCallbackResult delete(AbstractEvent event) {
-		LOGGER.info("DESTINATION_VENT:DELETE:. Event is " + event);
+		LOGGER.info("DESTINATION_EVENT:DELETE:. Event is " + event);
 
         return ConsumerCallbackResult.SUCCESS;
 	}
