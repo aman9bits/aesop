@@ -19,8 +19,6 @@ import com.flipkart.aesop.runtime.bootstrap.producer.BlockingEventProducer;
 import com.flipkart.aesop.runtime.bootstrap.producer.registeration.ProducerRegistration;
 import com.linkedin.databus.container.netty.HttpRelay;
 import com.linkedin.databus.core.util.ConfigLoader;
-import com.linkedin.databus2.core.seq.MultiServerSequenceNumberHandler;
-import com.linkedin.databus2.core.seq.SequenceNumberHandlerFactory;
 import com.linkedin.databus2.producers.EventProducer;
 import com.linkedin.databus2.relay.config.LogicalSourceConfig;
 import com.linkedin.databus2.relay.config.PhysicalSourceStaticConfig;

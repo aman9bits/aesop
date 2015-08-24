@@ -12,12 +12,11 @@
  */
 package com.flipkart.aesop.runtime.producer.mapper;
 
-import org.apache.avro.Schema;
-import org.apache.avro.generic.GenericRecord;
-
 import com.google.code.or.binlog.BinlogEventV4Header;
 import com.google.code.or.common.glossary.Row;
 import com.linkedin.databus.core.DbusOpcode;
+import org.apache.avro.Schema;
+import org.apache.avro.generic.GenericRecord;
 
 /**
  * <code>BinLogEventMapper</code> maps the specified bin log event details such as event header, mutated row and

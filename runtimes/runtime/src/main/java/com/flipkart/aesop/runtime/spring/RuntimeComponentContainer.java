@@ -15,14 +15,12 @@
  */
 package com.flipkart.aesop.runtime.spring;
 
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
+import com.flipkart.aesop.runtime.RuntimeFrameworkConstants;
+import com.flipkart.aesop.runtime.impl.admin.RuntimeConfigServiceImpl;
+import com.flipkart.aesop.runtime.spi.admin.RuntimeConfigService;
+import com.flipkart.aesop.runtime.spi.registry.AbstractRuntimeRegistry;
+import com.flipkart.aesop.runtime.spring.registry.ServerContainerConfigInfo;
+import com.linkedin.databus2.core.container.netty.ServerContainer;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.FileSystemResource;
@@ -39,12 +37,13 @@ import org.trpr.platform.runtime.impl.config.FileLocator;
 import org.trpr.platform.runtime.spi.bootstrapext.BootstrapExtension;
 import org.trpr.platform.runtime.spi.component.ComponentContainer;
 
-import com.flipkart.aesop.runtime.RuntimeFrameworkConstants;
-import com.flipkart.aesop.runtime.impl.admin.RuntimeConfigServiceImpl;
-import com.flipkart.aesop.runtime.spi.admin.RuntimeConfigService;
-import com.flipkart.aesop.runtime.spi.registry.AbstractRuntimeRegistry;
-import com.flipkart.aesop.runtime.spring.registry.ServerContainerConfigInfo;
-import com.linkedin.databus2.core.container.netty.ServerContainer;
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * The <code>RuntimeComponentContainer</code> class is a ComponentContainer implementation as defined by Trooper {@link "https://github.com/regunathb/Trooper"} that 

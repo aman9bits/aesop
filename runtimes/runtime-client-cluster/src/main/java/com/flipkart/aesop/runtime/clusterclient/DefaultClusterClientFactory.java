@@ -13,26 +13,21 @@
 
 package com.flipkart.aesop.runtime.clusterclient;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-
+import com.flipkart.aesop.runtime.client.DefaultClient;
+import com.flipkart.aesop.runtime.config.ClientClusterConfig;
+import com.flipkart.aesop.runtime.config.ClusterRegistration;
+import com.linkedin.databus.client.DatabusHttpClientImpl;
+import com.linkedin.databus.client.pub.*;
+import com.linkedin.databus.core.util.ConfigLoader;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 import org.trpr.platform.core.impl.logging.LogFactory;
 import org.trpr.platform.core.spi.logging.Logger;
 
-import com.flipkart.aesop.runtime.client.DefaultClient;
-import com.flipkart.aesop.runtime.config.ClientClusterConfig;
-import com.flipkart.aesop.runtime.config.ClusterRegistration;
-import com.linkedin.databus.client.DatabusHttpClientImpl;
-import com.linkedin.databus.client.pub.DatabusRegistration;
-import com.linkedin.databus.client.pub.DbusClusterConsumerFactory;
-import com.linkedin.databus.client.pub.DbusModPartitionedFilterFactory;
-import com.linkedin.databus.client.pub.DbusPartitionListener;
-import com.linkedin.databus.client.pub.DbusServerSideFilterFactory;
-import com.linkedin.databus.core.util.ConfigLoader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 
 /**
  * The Spring factory bean for creating {@link DefaultClient} instances based on configured properties

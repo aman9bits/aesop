@@ -15,24 +15,8 @@
  */
 package com.flipkart.aesop.runtime.producer.hbase;
 
-import java.net.InetAddress;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map.Entry;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-import com.flipkart.aesop.runtime.producer.spi.SCNGenerator;
-import org.apache.avro.generic.GenericRecord;
-import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.hbase.HBaseConfiguration;
-import org.apache.hadoop.hbase.KeyValue;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.util.Assert;
-import org.trpr.platform.core.PlatformException;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.producer.AbstractEventProducer;
+import com.flipkart.aesop.runtime.producer.spi.SCNGenerator;
 import com.linkedin.databus.core.DbusEventInfo;
 import com.linkedin.databus.core.DbusEventKey;
 import com.linkedin.databus.core.DbusOpcode;
@@ -45,6 +29,21 @@ import com.ngdata.sep.impl.SepConsumer;
 import com.ngdata.sep.impl.SepModelImpl;
 import com.ngdata.sep.util.zookeeper.ZkUtil;
 import com.ngdata.sep.util.zookeeper.ZooKeeperItf;
+import org.apache.avro.generic.GenericRecord;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.HBaseConfiguration;
+import org.apache.hadoop.hbase.KeyValue;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.util.Assert;
+import org.trpr.platform.core.PlatformException;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.net.InetAddress;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map.Entry;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * <code>HBaseEventProducer</code> is a sub-type of {@link AbstractEventProducer} that listens to HBase WAL edits using the hbase-sep module library classes 

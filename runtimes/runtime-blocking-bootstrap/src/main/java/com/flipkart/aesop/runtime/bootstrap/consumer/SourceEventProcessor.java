@@ -13,13 +13,12 @@
 
 package com.flipkart.aesop.runtime.bootstrap.consumer;
 
-import com.linkedin.databus2.core.BackoffTimer;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.event.AbstractEvent;
 import com.flipkart.aesop.eventconsumer.AbstractEventConsumer;
 import com.linkedin.databus.client.pub.ConsumerCallbackResult;
+import com.linkedin.databus2.core.BackoffTimer;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
 
 /**
  * <code>SourceEventProcessor</code> processes the source event by invoking the registered event consumer.

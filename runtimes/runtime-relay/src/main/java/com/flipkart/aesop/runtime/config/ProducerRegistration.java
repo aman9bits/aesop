@@ -16,12 +16,11 @@
 
 package com.flipkart.aesop.runtime.config;
 
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.util.Assert;
-
 import com.flipkart.aesop.runtime.relay.DefaultRelay;
 import com.linkedin.databus2.producers.EventProducer;
 import com.linkedin.databus2.relay.config.PhysicalSourceConfig;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.util.Assert;
 
 import java.util.Properties;
 

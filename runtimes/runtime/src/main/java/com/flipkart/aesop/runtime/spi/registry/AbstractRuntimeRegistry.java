@@ -16,11 +16,10 @@
 
 package com.flipkart.aesop.runtime.spi.registry;
 
-import java.util.List;
-
-
 import com.flipkart.aesop.runtime.spring.registry.ServerContainerConfigInfo;
 import com.linkedin.databus2.core.container.netty.ServerContainer;
+
+import java.util.List;
 
 /**
  * Interface for runtime registry. Holds information on loaded runtime instances and provides methods to query them.

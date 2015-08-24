@@ -13,17 +13,6 @@
 
 package com.flipkart.aesop.bootstrap.mysql.mapper.impl;
 
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
-
-import org.apache.avro.Schema;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.bootstrap.mysql.mapper.BinLogEventMapper;
 import com.flipkart.aesop.bootstrap.mysql.utils.ORToMysqlMapper;
 import com.flipkart.aesop.event.AbstractEvent;
@@ -34,6 +23,11 @@ import com.linkedin.databus.core.DbusConstants;
 import com.linkedin.databus.core.DbusOpcode;
 import com.linkedin.databus2.core.DatabusException;
 import com.linkedin.databus2.schemas.utils.SchemaHelper;
+import org.apache.avro.Schema;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.util.*;
 
 /**
  * <code>DefaultBinLogEventMapper</code> maps binlog events to {@link AbstractEvent}

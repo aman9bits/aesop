@@ -3,9 +3,6 @@
  */
 package com.flipkart.aesop.sample.client.common.consumer;
 
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.sample.client.common.events.MysqlBinLogEvent;
 import com.flipkart.aesop.sample.client.common.events.MysqlBinLogEventImpl;
 import com.linkedin.databus.client.consumer.AbstractDatabusCombinedConsumer;
@@ -13,6 +10,8 @@ import com.linkedin.databus.client.pub.ConsumerCallbackResult;
 import com.linkedin.databus.client.pub.DbusEventDecoder;
 import com.linkedin.databus.core.DbusEvent;
 import com.linkedin.databus2.core.DatabusException;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
 
 public abstract class AbstractMySqlEventConsumer extends AbstractDatabusCombinedConsumer
 {

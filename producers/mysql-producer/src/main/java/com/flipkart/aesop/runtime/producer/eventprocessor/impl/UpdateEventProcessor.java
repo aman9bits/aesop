@@ -12,12 +12,6 @@
  */
 package com.flipkart.aesop.runtime.producer.eventprocessor.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.producer.eventlistener.OpenReplicationListener;
 import com.flipkart.aesop.runtime.producer.eventprocessor.BinLogEventProcessor;
 import com.flipkart.aesop.runtime.producer.txnprocessor.MysqlTransactionManager;
@@ -26,6 +20,11 @@ import com.google.code.or.binlog.impl.event.UpdateRowsEvent;
 import com.google.code.or.common.glossary.Pair;
 import com.google.code.or.common.glossary.Row;
 import com.linkedin.databus.core.DbusOpcode;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The <code>UpdateEventProcessor</code> processes UpdateRowsEvent from source. This event is received if there is any

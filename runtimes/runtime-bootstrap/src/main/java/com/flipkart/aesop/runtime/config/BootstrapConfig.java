@@ -15,12 +15,12 @@
  */
 package com.flipkart.aesop.runtime.config;
 
-import java.io.File;
-import java.util.Properties;
-
 import org.springframework.util.Assert;
 import org.trpr.platform.core.PlatformException;
 import org.trpr.platform.runtime.common.RuntimeVariables;
+
+import java.io.File;
+import java.util.Properties;
 
 /**
  * <code>BootstrapConfig</code> holds Databus configuration properties for a Bootstrap server that serves change data snapshots. 

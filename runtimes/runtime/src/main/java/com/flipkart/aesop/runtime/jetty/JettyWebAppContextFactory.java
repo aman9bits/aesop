@@ -15,14 +15,13 @@
  */
 package com.flipkart.aesop.runtime.jetty;
 
-import java.io.File;
-
+import com.flipkart.aesop.runtime.spring.RuntimeComponentContainer;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.springframework.beans.factory.FactoryBean;
 import org.trpr.platform.runtime.common.RuntimeVariables;
 import org.trpr.platform.runtime.impl.config.FileLocator;
 
-import com.flipkart.aesop.runtime.spring.RuntimeComponentContainer;
+import java.io.File;
 
 /**
  * The Spring factory bean for creating the Jetty WebAppContext using resources found on the classpath

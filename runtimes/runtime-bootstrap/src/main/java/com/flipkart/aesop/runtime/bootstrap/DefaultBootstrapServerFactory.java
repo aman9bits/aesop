@@ -15,14 +15,13 @@
  */
 package com.flipkart.aesop.runtime.bootstrap;
 
-import org.springframework.beans.factory.FactoryBean;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.util.Assert;
-
 import com.flipkart.aesop.runtime.config.BootstrapConfig;
 import com.linkedin.databus.bootstrap.server.BootstrapServerConfig;
 import com.linkedin.databus.bootstrap.server.BootstrapServerStaticConfig;
 import com.linkedin.databus.core.util.ConfigLoader;
+import org.springframework.beans.factory.FactoryBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.util.Assert;
 
 /**
  * The Spring factory bean for creating {@link DefaultBootstrapServer} instances based on configured properties

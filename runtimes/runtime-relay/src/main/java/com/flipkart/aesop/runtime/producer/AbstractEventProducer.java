@@ -15,9 +15,13 @@
  */
 package com.flipkart.aesop.runtime.producer;
 
-import java.io.ByteArrayOutputStream;
-import java.util.concurrent.atomic.AtomicLong;
-
+import com.linkedin.databus.core.DbusEventBufferAppendable;
+import com.linkedin.databus.core.monitoring.mbean.DbusEventsStatisticsCollector;
+import com.linkedin.databus2.core.seq.MaxSCNReaderWriter;
+import com.linkedin.databus2.producers.EventProducer;
+import com.linkedin.databus2.relay.config.PhysicalSourceConfig;
+import com.linkedin.databus2.relay.config.PhysicalSourceStaticConfig;
+import com.linkedin.databus2.schemas.SchemaRegistryService;
 import org.apache.avro.generic.GenericDatumWriter;
 import org.apache.avro.generic.GenericRecord;
 import org.apache.avro.io.BinaryEncoder;
@@ -26,13 +30,8 @@ import org.apache.avro.io.EncoderFactory;
 import org.trpr.platform.core.impl.logging.LogFactory;
 import org.trpr.platform.core.spi.logging.Logger;
 
-import com.linkedin.databus.core.DbusEventBufferAppendable;
-import com.linkedin.databus.core.monitoring.mbean.DbusEventsStatisticsCollector;
-import com.linkedin.databus2.core.seq.MaxSCNReaderWriter;
-import com.linkedin.databus2.producers.EventProducer;
-import com.linkedin.databus2.relay.config.PhysicalSourceConfig;
-import com.linkedin.databus2.relay.config.PhysicalSourceStaticConfig;
-import com.linkedin.databus2.schemas.SchemaRegistryService;
+import java.io.ByteArrayOutputStream;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * <code>AbstractEventProducer</code> is an implementation of {@link EventProducer} that provides convenience methods for all sub-types

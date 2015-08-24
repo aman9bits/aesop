@@ -14,12 +14,16 @@
  *******************************************************************************/
 package com.flipkart.aesop.hbasedatalayer.delete;
 
-import java.util.Map;
-
+import com.flipkart.aesop.destinationoperation.AbstractJDBCDataLayerFactory;
+import com.flipkart.aesop.hbasedatalayer.upsert.HBaseUpsertDataLayerFactory;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 
+<<<<<<< HEAD
 import com.flipkart.aesop.hbasedatalayer.AbstractHBaseDataLayerFactory;
 import com.flipkart.aesop.hbasedatalayer.upsert.HBaseUpsertDataLayerFactory;
+=======
+import java.util.Map;
+>>>>>>> Optimized Imports
 
 /**
  * Generates objects of {@link HBaseDeleteDataLayer} and ensures that it is singleton.

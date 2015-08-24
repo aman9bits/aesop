@@ -15,9 +15,6 @@
  */
 package com.flipkart.aesop.runtime.bootstrap;
 
-import java.io.IOException;
-import java.sql.SQLException;
-
 import com.linkedin.databus.bootstrap.producer.BootstrapProducerStaticConfig;
 import com.linkedin.databus.bootstrap.producer.DatabusBootstrapProducer;
 import com.linkedin.databus.client.pub.DatabusBootstrapConsumer;
@@ -25,6 +22,9 @@ import com.linkedin.databus.client.pub.DatabusClientException;
 import com.linkedin.databus.core.util.InvalidConfigException;
 import com.linkedin.databus2.core.DatabusException;
 import com.linkedin.databus2.core.container.request.BootstrapDBException;
+
+import java.io.IOException;
+import java.sql.SQLException;
 
 /**
  * The <code>DefaultBootstrapProducer</code> class defines behavior of a default Databus Relay Client that acts as a producer for Bootstrap data i.e. consumes

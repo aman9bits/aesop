@@ -15,16 +15,6 @@
  */
 package com.flipkart.aesop.serializer.stateengine;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.avro.generic.GenericRecord;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.util.Assert;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.producer.ReadEventCycleSummary;
 import com.netflix.zeno.diff.DiffSerializationFramework;
 import com.netflix.zeno.diff.TypeDiff;
@@ -33,6 +23,15 @@ import com.netflix.zeno.diff.TypeDiffOperation;
 import com.netflix.zeno.fastblob.FastBlobStateEngine;
 import com.netflix.zeno.fastblob.state.TypeDeserializationStateListener;
 import com.netflix.zeno.serializer.SerializerFactory;
+import org.apache.avro.generic.GenericRecord;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.util.Assert;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The <code>DiffInterpreter</code> loads serialized data snapshots and deltas onto a {@link FastBlobStateEngine} and provides methods to listen-in on the 

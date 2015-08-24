@@ -13,11 +13,10 @@
 
 package com.flipkart.aesop.bootstrap.mysql.mapper;
 
-import org.apache.avro.Schema;
-
 import com.flipkart.aesop.event.AbstractEvent;
 import com.google.code.or.common.glossary.Row;
 import com.linkedin.databus.core.DbusOpcode;
+import org.apache.avro.Schema;
 
 /**
  * <code>BinLogEventMapper</code> maps the specified bin log event details such as event header, mutated row and

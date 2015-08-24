@@ -12,16 +12,15 @@
  */
 package com.flipkart.aesop.runtime.producer.eventlistener;
 
-import java.util.Map;
-
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.producer.eventprocessor.BinLogEventProcessor;
 import com.flipkart.aesop.runtime.producer.schema.eventprocessor.SchemaChangeEventProcessor;
 import com.flipkart.aesop.runtime.producer.txnprocessor.MysqlTransactionManager;
 import com.google.code.or.binlog.BinlogEventListener;
 import com.google.code.or.binlog.BinlogEventV4;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.util.Map;
 
 /**
  * The <OpenReplicationListener> is a binary log callback implementation of {@link BinlogEventListener}.

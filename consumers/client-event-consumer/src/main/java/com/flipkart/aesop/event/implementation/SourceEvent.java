@@ -15,11 +15,11 @@
 
 package com.flipkart.aesop.event.implementation;
 
-import java.util.Map;
-import java.util.Set;
-
 import com.flipkart.aesop.event.AbstractEvent;
 import com.linkedin.databus.core.DbusOpcode;
+
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Source Event class. Class used to represent the event received from the Relay.

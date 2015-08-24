@@ -15,8 +15,8 @@
 package com.flipkart.aesop.processor.es.delete;
 
 import com.flipkart.aesop.destinationoperation.DeleteDestinationStoreProcessor;
-import com.flipkart.aesop.processor.es.client.ElasticSearchClient;
 import com.flipkart.aesop.event.AbstractEvent;
+import com.flipkart.aesop.processor.es.client.ElasticSearchClient;
 import com.linkedin.databus.client.pub.ConsumerCallbackResult;
 import com.linkedin.databus.core.DbusOpcode;
 import org.elasticsearch.action.get.GetResponse;

@@ -15,14 +15,13 @@
  */
 package com.flipkart.aesop.serializer.stateengine;
 
-import java.io.File;
-
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.util.Assert;
-
 import com.netflix.zeno.fastblob.FastBlobStateEngine;
 import com.netflix.zeno.serializer.NFTypeSerializer;
 import com.netflix.zeno.serializer.SerializerFactory;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.util.Assert;
+
+import java.io.File;
 
 /**
  * The <code>StateTransitioner</code> creates or suitably initializes an existing {@link FastBlobStateEngine} for producing snapshots or deltas.

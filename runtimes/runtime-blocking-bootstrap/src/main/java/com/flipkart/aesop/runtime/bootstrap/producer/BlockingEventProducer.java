@@ -17,7 +17,6 @@ import com.flipkart.aesop.runtime.bootstrap.configs.BootstrapConfig;
 import com.flipkart.aesop.runtime.bootstrap.consumer.SourceEventConsumer;
 import com.flipkart.aesop.runtime.bootstrap.metrics.MetricsCollector;
 import com.linkedin.databus.core.monitoring.mbean.DbusEventsStatisticsCollector;
-import com.linkedin.databus2.core.seq.MaxSCNReaderWriter;
 import com.linkedin.databus2.producers.EventProducer;
 import com.linkedin.databus2.relay.config.PhysicalSourceConfig;
 import com.linkedin.databus2.relay.config.PhysicalSourceStaticConfig;

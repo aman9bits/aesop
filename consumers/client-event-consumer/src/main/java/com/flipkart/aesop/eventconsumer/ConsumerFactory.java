@@ -15,15 +15,15 @@
 
 package com.flipkart.aesop.eventconsumer;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
-
 import com.linkedin.databus.client.pub.DatabusCombinedConsumer;
 import com.linkedin.databus.client.pub.DbusClusterConsumerFactory;
 import com.linkedin.databus.client.pub.DbusClusterInfo;
 import com.linkedin.databus.client.pub.DbusPartitionInfo;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Class responsible for generating {@link List} of new instances of {@link AbstractEventConsumer} each it is called for

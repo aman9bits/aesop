@@ -15,15 +15,6 @@
 
 package com.flipkart.aesop.event;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
-import org.apache.avro.Schema;
-import org.apache.avro.Schema.Field;
-import org.apache.avro.generic.GenericRecord;
-
 import com.flipkart.aesop.utils.AvroToMysqlMapper;
 import com.flipkart.aesop.utils.MysqlDataTypes;
 import com.linkedin.databus.client.pub.DbusEventDecoder;
@@ -33,6 +24,14 @@ import com.linkedin.databus.core.DbusOpcode;
 import com.linkedin.databus2.core.DatabusException;
 import com.linkedin.databus2.schemas.VersionedSchema;
 import com.linkedin.databus2.schemas.utils.SchemaHelper;
+import org.apache.avro.Schema;
+import org.apache.avro.Schema.Field;
+import org.apache.avro.generic.GenericRecord;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Abstract Event Factory to be extended by the various types of Event Factory Classes.

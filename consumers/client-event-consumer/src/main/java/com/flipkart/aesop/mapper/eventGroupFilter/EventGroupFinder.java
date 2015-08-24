@@ -15,11 +15,11 @@
 
 package com.flipkart.aesop.mapper.eventGroupFilter;
 
-import java.util.List;
-
 import com.flipkart.aesop.event.AbstractEvent;
 import com.flipkart.aesop.event.Event;
 import com.flipkart.aesop.mapper.eventGroupFilter.implementation.DefaultEventGroupFinderImpl;
+
+import java.util.List;
 
 /**
  * Interface for {@link EventGroupFinder} which calculates the Group Id of an {@link Event}, or filters the events as

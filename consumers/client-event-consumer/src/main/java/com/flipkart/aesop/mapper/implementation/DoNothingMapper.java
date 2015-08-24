@@ -1,7 +1,6 @@
 package com.flipkart.aesop.mapper.implementation;
 
 import com.flipkart.aesop.event.AbstractEvent;
-import com.flipkart.aesop.event.implementation.DestinationEvent;
 import com.flipkart.aesop.mapper.AbstractMapper;
 
 import java.util.ArrayList;

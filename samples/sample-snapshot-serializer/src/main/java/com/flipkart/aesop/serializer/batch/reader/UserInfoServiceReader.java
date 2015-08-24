@@ -15,10 +15,8 @@
  */
 package com.flipkart.aesop.serializer.batch.reader;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-
+import com.flipkart.aesop.serializer.model.UserInfo;
+import com.flipkart.aesop.serializer.model.UserPreferencesInfo;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpRequestBase;
@@ -35,8 +33,9 @@ import org.trpr.platform.batch.common.BatchException;
 import org.trpr.platform.batch.impl.spring.reader.CompositeItemStreamReader;
 import org.trpr.platform.batch.spi.spring.reader.BatchItemStreamReader;
 
-import com.flipkart.aesop.serializer.model.UserInfo;
-import com.flipkart.aesop.serializer.model.UserPreferencesInfo;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * The <code>UserInfoServiceReader</code> class is a simple implementation of the {@link BatchItemStreamReader} that returns the sample data item {@link UserInfo} instances

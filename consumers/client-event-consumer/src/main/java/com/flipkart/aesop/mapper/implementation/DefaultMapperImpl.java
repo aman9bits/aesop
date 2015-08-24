@@ -15,11 +15,6 @@
 
 package com.flipkart.aesop.mapper.implementation;
 
-import java.util.List;
-import java.util.Set;
-
-import org.springframework.util.Assert;
-
 import com.flipkart.aesop.event.AbstractEvent;
 import com.flipkart.aesop.mapper.AbstractMapper;
 import com.flipkart.aesop.mapper.Mapper;
@@ -28,6 +23,10 @@ import com.flipkart.aesop.mapper.enums.EntityExistInConfig;
 import com.flipkart.aesop.mapper.enums.NamespaceExistInConfig;
 import com.flipkart.aesop.mapper.utils.MapperHelper;
 import com.typesafe.config.Config;
+import org.springframework.util.Assert;
+
+import java.util.List;
+import java.util.Set;
 
 /**
  * Default Implementation of the {@link Mapper}. Uses {@link MapperConfigImpl}.

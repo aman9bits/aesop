@@ -1,13 +1,12 @@
 package com.flipkart.aesop.runtime.producer.eventprocessor.impl;
 
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.producer.eventlistener.OpenReplicationListener;
 import com.flipkart.aesop.runtime.producer.eventprocessor.BinLogEventProcessor;
 import com.google.code.or.binlog.BinlogEventV4;
 import com.google.code.or.binlog.impl.event.DeleteRowsEventV2;
 import com.linkedin.databus.core.DbusOpcode;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
 
 /**
  * The <code>DeleteEventV2Processor</code> processes DeleteRowsEventV2 from source. This event gets called when ever few

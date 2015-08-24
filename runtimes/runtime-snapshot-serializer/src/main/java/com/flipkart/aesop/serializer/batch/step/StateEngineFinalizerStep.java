@@ -15,15 +15,14 @@
  */
 package com.flipkart.aesop.serializer.batch.step;
 
+import com.flipkart.aesop.serializer.stateengine.StateTransitioner;
+import com.netflix.zeno.fastblob.FastBlobStateEngine;
 import org.springframework.batch.core.StepContribution;
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
-
-import com.flipkart.aesop.serializer.stateengine.StateTransitioner;
-import com.netflix.zeno.fastblob.FastBlobStateEngine;
 
 /**
  * The <code>StateEngineFinalizerStep</code> class is an implementation of the Spring batch {@link Tasklet} that writes contents of the Zeno {@link FastBlobStateEngine}

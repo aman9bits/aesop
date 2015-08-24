@@ -14,11 +14,10 @@
  *******************************************************************************/
 package com.flipkart.aesop.mysqldatalayer.upsert;
 
-import java.util.Map;
-
+import com.flipkart.aesop.destinationoperation.AbstractJDBCDataLayerFactory;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 
-import com.flipkart.aesop.destinationoperation.AbstractJDBCDataLayerFactory;
+import java.util.Map;
 
 /**
  * Generates objects of {@link MySQLUpsertDataLayer } and ensures that it is singleton.

@@ -15,12 +15,6 @@
  */
 package com.flipkart.aesop.relay.sample;
 
-import java.util.LinkedList;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.events.sample.person.FieldChange;
 import com.flipkart.aesop.events.sample.person.Person;
 import com.flipkart.aesop.runtime.producer.AbstractEventProducer;
@@ -29,6 +23,11 @@ import com.linkedin.databus.core.DbusEventKey;
 import com.linkedin.databus.core.DbusOpcode;
 import com.linkedin.databus2.core.DatabusException;
 import com.linkedin.databus2.schemas.utils.SchemaHelper;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.util.LinkedList;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * <code>PersonEventProducer</code> is a sub-type of {@link AbstractEventProducer}} that creates a specified number 

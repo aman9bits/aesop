@@ -15,9 +15,8 @@
  */
 package com.flipkart.aesop.runtime.producer.hbase;
 
-import org.apache.avro.generic.GenericRecord;
-
 import com.ngdata.sep.SepEvent;
+import org.apache.avro.generic.GenericRecord;
 
 /**
  * <code>SepEventMapper</code> maps a single {@link SepEvent} to an appropriate instance of the {@link GenericRecord} sub-type T.

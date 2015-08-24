@@ -15,19 +15,18 @@
  */
 package com.flipkart.aesop.runtime.client;
 
-import java.io.IOException;
-import java.util.List;
-
-import org.trpr.platform.core.PlatformException;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.linkedin.databus.client.DatabusHttpClientImpl;
 import com.linkedin.databus.core.BootstrapCheckpointHandler;
 import com.linkedin.databus.core.Checkpoint;
 import com.linkedin.databus.core.data_model.DatabusSubscription;
 import com.linkedin.databus.core.util.InvalidConfigException;
 import com.linkedin.databus2.core.DatabusException;
+import org.trpr.platform.core.PlatformException;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.io.IOException;
+import java.util.List;
 
 /**
  * The <code>DefaultClient</code> class defines behavior of a default Databus Relay Client. 

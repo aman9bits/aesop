@@ -16,14 +16,14 @@
 
 package com.flipkart.aesop.runtime.config;
 
-import java.io.File;
-import java.util.Properties;
-
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 import org.trpr.platform.core.PlatformException;
 import org.trpr.platform.runtime.common.RuntimeVariables;
 import org.trpr.platform.runtime.impl.config.FileLocator;
+
+import java.io.File;
+import java.util.Properties;
 
 /**
  * <code>RelayConfig</code> holds Databus configuration properties for a Relay

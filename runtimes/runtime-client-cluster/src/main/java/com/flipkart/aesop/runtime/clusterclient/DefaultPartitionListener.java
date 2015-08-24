@@ -12,12 +12,11 @@
  */
 package com.flipkart.aesop.runtime.clusterclient;
 
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.linkedin.databus.client.pub.DatabusRegistration;
 import com.linkedin.databus.client.pub.DbusPartitionInfo;
 import com.linkedin.databus.client.pub.DbusPartitionListener;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
 
 /**
  * <code>DefaultPartitionListener</code> is the deafult partition listener. It registers with DatabusRegistration on

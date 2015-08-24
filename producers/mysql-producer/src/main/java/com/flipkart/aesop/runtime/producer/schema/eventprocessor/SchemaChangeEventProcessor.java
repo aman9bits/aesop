@@ -1,9 +1,9 @@
 package com.flipkart.aesop.runtime.producer.schema.eventprocessor;
 
-import java.util.Map;
-
 import com.google.code.or.binlog.impl.event.QueryEvent;
 import com.linkedin.databus2.schemas.SchemaRegistryService;
+
+import java.util.Map;
 
 /**
  * The <code>SchemaChangeEventProcessor</code> is a base interface for all schema change event processors

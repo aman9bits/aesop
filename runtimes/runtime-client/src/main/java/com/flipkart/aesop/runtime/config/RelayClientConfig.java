@@ -15,10 +15,10 @@
  */
 package com.flipkart.aesop.runtime.config;
 
-import java.util.List;
-
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
+
+import java.util.List;
 
 /**
  * <code>RelayClientConfig</code> holds Databus configuration properties for a Relay Client instance. This config treats the

@@ -13,9 +13,9 @@
 
 package com.flipkart.aesop.runtime.config;
 
-import java.util.List;
-
 import org.springframework.util.Assert;
+
+import java.util.List;
 
 /**
  * <code>ClientClusterConfig</code> holds Databus configuration properties for a Databus Client Cluster instance. This

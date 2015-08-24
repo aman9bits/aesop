@@ -15,13 +15,6 @@
  */
 package com.flipkart.aesop.relay.sample;
 
-import java.util.LinkedList;
-import java.util.List;
-
-import org.apache.commons.lang.math.NumberUtils;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.springframework.core.serializer.support.SerializationFailedException;
-
 import com.flipkart.aesop.events.sample.person.FieldChange;
 import com.flipkart.aesop.events.sample.person.Person;
 import com.flipkart.aesop.serializer.model.UserInfo;
@@ -32,6 +25,12 @@ import com.netflix.zeno.genericobject.GenericObject;
 import com.netflix.zeno.genericobject.GenericObject.Field;
 import com.netflix.zeno.genericobject.GenericObjectSerializationFramework;
 import com.netflix.zeno.serializer.SerializerFactory;
+import org.apache.commons.lang.math.NumberUtils;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.springframework.core.serializer.support.SerializationFailedException;
+
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * The <code>PersonDiffChangeEventMapper</code> is an implementation of the {@link DiffChangeEventMapper} that maps {@link com.flipkart.aesop.serializer.model.UserInfo}

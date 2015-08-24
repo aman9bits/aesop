@@ -1,9 +1,9 @@
 package com.flipkart.aesop.sample.client.common.events;
 
+import com.linkedin.databus.core.DbusOpcode;
+
 import java.util.List;
 import java.util.Map;
-
-import com.linkedin.databus.core.DbusOpcode;
 
 /**
  * @author yogesh.dahiya

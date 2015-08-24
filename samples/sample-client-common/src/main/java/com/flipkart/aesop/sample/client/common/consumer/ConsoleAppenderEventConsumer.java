@@ -1,11 +1,10 @@
 
 package com.flipkart.aesop.sample.client.common.consumer;
 
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.sample.client.common.events.MysqlBinLogEvent;
 import com.linkedin.databus.client.pub.ConsumerCallbackResult;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
 
 /**
  * yogesh.dahiya

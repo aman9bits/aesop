@@ -1,16 +1,5 @@
 package com.flipkart.aesop.runtime.producer.schema.eventprocessor.impl;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import org.apache.avro.Schema;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.avro.schemagenerator.main.SchemaGenerator;
 import com.flipkart.aesop.runtime.producer.schema.eventprocessor.SchemaChangeEventProcessor;
 import com.google.code.or.binlog.impl.event.QueryEvent;
@@ -18,6 +7,16 @@ import com.linkedin.databus2.schemas.FileSystemSchemaRegistryService;
 import com.linkedin.databus2.schemas.SchemaRegistryService;
 import com.linkedin.databus2.schemas.VersionedSchema;
 import com.linkedin.databus2.schemas.VersionedSchemaId;
+import org.apache.avro.Schema;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * <code>UpdateSchemaChangeEventProcessor</code> update the existing schemaRegistry service

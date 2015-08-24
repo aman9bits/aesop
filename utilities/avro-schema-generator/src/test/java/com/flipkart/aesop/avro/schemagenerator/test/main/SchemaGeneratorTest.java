@@ -1,13 +1,9 @@
 package com.flipkart.aesop.avro.schemagenerator.test.main;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import com.flipkart.aesop.avro.schemagenerator.main.SchemaGenerator;
 import com.flipkart.aesop.avro.schemagenerator.mysql.DataSourceConfig;
+
+import java.util.*;
 
 /**
  * <code>SchemaGeneratorTest</code> test for SchemaGenerator class.

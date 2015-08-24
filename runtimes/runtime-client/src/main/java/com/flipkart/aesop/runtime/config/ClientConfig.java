@@ -16,15 +16,15 @@
 
 package com.flipkart.aesop.runtime.config;
 
-import java.io.File;
-import java.util.List;
-import java.util.Properties;
-
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 import org.trpr.platform.core.PlatformException;
 import org.trpr.platform.runtime.common.RuntimeVariables;
+
+import java.io.File;
+import java.util.List;
+import java.util.Properties;
 
 /**
  * <code>ClientConfig</code> holds Databus configuration properties for a Databus Client instance. This config treats the

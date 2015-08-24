@@ -15,19 +15,18 @@
  */
 package com.flipkart.aesop.serializer.stateengine;
 
+import com.flipkart.aesop.serializer.SerializerConstants;
+import com.netflix.zeno.fastblob.FastBlobStateEngine;
+import com.netflix.zeno.fastblob.io.FastBlobWriter;
+import org.trpr.platform.core.PlatformException;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
 import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Calendar;
-
-import org.trpr.platform.core.PlatformException;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
-import com.flipkart.aesop.serializer.SerializerConstants;
-import com.netflix.zeno.fastblob.FastBlobStateEngine;
-import com.netflix.zeno.fastblob.io.FastBlobWriter;
 
 /**
  * The <code>DailyStateTransitioner</code> class is a sub-type of {@link StateTransitioner} that creates or suitably initializes an existing 

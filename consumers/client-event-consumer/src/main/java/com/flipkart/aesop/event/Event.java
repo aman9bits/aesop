@@ -15,11 +15,11 @@
 
 package com.flipkart.aesop.event;
 
+import com.linkedin.databus.core.DbusOpcode;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import com.linkedin.databus.core.DbusOpcode;
 
 /**
  * Event class. Every event should implement this class or extend the Abstract Implementation of this class.

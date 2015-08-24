@@ -15,11 +15,11 @@
 
 package com.flipkart.aesop.event.implementation;
 
-import java.util.Map;
-import java.util.Set;
-
 import com.flipkart.aesop.event.AbstractEventFactory;
 import com.linkedin.databus.core.DbusOpcode;
+
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Source Event Factory.

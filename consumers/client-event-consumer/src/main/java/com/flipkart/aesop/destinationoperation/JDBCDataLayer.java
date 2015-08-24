@@ -15,9 +15,9 @@
 
 package com.flipkart.aesop.destinationoperation;
 
-import java.util.Map;
-
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
+import java.util.Map;
 
 /**
  * Interface to be implemented by any Data Layer which uses JDBC to interact with Destination Store.

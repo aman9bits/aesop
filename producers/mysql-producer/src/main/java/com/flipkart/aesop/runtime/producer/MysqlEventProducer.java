@@ -12,21 +12,6 @@
  */
 package com.flipkart.aesop.runtime.producer;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import org.apache.avro.generic.GenericRecord;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.util.Assert;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.producer.avro.MysqlAvroEventManager;
 import com.flipkart.aesop.runtime.producer.eventlistener.OpenReplicationListener;
 import com.flipkart.aesop.runtime.producer.eventprocessor.BinLogEventProcessor;
@@ -43,6 +28,20 @@ import com.linkedin.databus2.core.DatabusException;
 import com.linkedin.databus2.producers.EventCreationException;
 import com.linkedin.databus2.relay.config.LogicalSourceStaticConfig;
 import com.linkedin.databus2.relay.config.PhysicalSourceStaticConfig;
+import org.apache.avro.generic.GenericRecord;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.util.Assert;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * <code>MysqlEventProducer</code> kick starts bin log event listener to listen to Mysql events using open replicator

@@ -15,14 +15,14 @@
  */
 package com.flipkart.aesop.relay.hbase;
 
-import java.io.IOException;
-
 import com.flipkart.aesop.events.sample.person.Person;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
+
+import java.io.IOException;
 
 /**
  * WARNING : This is test code. It is a quick hack to try out features using third party libraries like

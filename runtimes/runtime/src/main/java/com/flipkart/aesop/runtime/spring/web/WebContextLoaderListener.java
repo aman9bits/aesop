@@ -15,12 +15,11 @@
  */
 package com.flipkart.aesop.runtime.spring.web;
 
-import javax.servlet.ServletContext;
-
+import com.flipkart.aesop.runtime.spring.RuntimeComponentContainer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.context.ContextLoaderListener;
 
-import com.flipkart.aesop.runtime.spring.RuntimeComponentContainer;
+import javax.servlet.ServletContext;
 
 /**
  * A custom {@link ContextLoaderListener} that uses the Runtime {@link RuntimeComponentContainer#getCommonRuntimeBeansContext()} as the parent ApplicationContext

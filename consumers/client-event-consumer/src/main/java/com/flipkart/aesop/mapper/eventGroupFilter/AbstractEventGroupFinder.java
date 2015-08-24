@@ -15,12 +15,12 @@
 
 package com.flipkart.aesop.mapper.eventGroupFilter;
 
+import com.flipkart.aesop.event.AbstractEvent;
+import com.flipkart.aesop.mapper.eventGroupFilter.implementation.DefaultEventGroupFinderImpl;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import com.flipkart.aesop.event.AbstractEvent;
-import com.flipkart.aesop.mapper.eventGroupFilter.implementation.DefaultEventGroupFinderImpl;
 
 /**
  * Abstract Implementation of the {@link EventGroupFinder}. Preferably, extend this class to extend thiS class to

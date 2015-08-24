@@ -15,16 +15,15 @@
  */
 package com.flipkart.aesop.serializer.batch.writer;
 
-import java.util.List;
-
+import com.flipkart.aesop.serializer.stateengine.StateTransitioner;
+import com.netflix.zeno.fastblob.FastBlobStateEngine;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 import org.trpr.platform.core.impl.logging.LogFactory;
 import org.trpr.platform.core.spi.logging.Logger;
 
-import com.flipkart.aesop.serializer.stateengine.StateTransitioner;
-import com.netflix.zeno.fastblob.FastBlobStateEngine;
+import java.util.List;
 
 /**
  * The <code>StateEngineApenderWriter</code> class is a simple implementation of the Spring Batch {@link ItemWriter}. This item writer appends the passed-in items

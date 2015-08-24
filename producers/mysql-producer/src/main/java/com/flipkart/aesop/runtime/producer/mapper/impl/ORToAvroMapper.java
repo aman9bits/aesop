@@ -15,38 +15,19 @@
  */
 package com.flipkart.aesop.runtime.producer.mapper.impl;
 
+import com.google.code.or.common.glossary.Column;
+import com.google.code.or.common.glossary.column.*;
+import com.linkedin.databus.core.DatabusRuntimeException;
+import com.linkedin.databus2.core.DatabusException;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.Date;
-
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
-import com.google.code.or.common.glossary.Column;
-import com.google.code.or.common.glossary.column.BitColumn;
-import com.google.code.or.common.glossary.column.BlobColumn;
-import com.google.code.or.common.glossary.column.DateColumn;
-import com.google.code.or.common.glossary.column.DatetimeColumn;
-import com.google.code.or.common.glossary.column.DecimalColumn;
-import com.google.code.or.common.glossary.column.DoubleColumn;
-import com.google.code.or.common.glossary.column.EnumColumn;
-import com.google.code.or.common.glossary.column.FloatColumn;
-import com.google.code.or.common.glossary.column.Int24Column;
-import com.google.code.or.common.glossary.column.LongColumn;
-import com.google.code.or.common.glossary.column.LongLongColumn;
-import com.google.code.or.common.glossary.column.NullColumn;
-import com.google.code.or.common.glossary.column.SetColumn;
-import com.google.code.or.common.glossary.column.ShortColumn;
-import com.google.code.or.common.glossary.column.StringColumn;
-import com.google.code.or.common.glossary.column.TimeColumn;
-import com.google.code.or.common.glossary.column.TimestampColumn;
-import com.google.code.or.common.glossary.column.TinyColumn;
-import com.google.code.or.common.glossary.column.YearColumn;
-import com.linkedin.databus.core.DatabusRuntimeException;
-import com.linkedin.databus2.core.DatabusException;
 /**
  * <code>ORToAvroMapper</code> provides mapping of data from open replicator data type to avro data type.
  *

@@ -15,12 +15,6 @@
  */
 package com.flipkart.aesop.serializer.serializers;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-
 import com.flipkart.aesop.serializer.model.UserAddressInfo;
 import com.flipkart.aesop.serializer.model.UserInfo;
 import com.flipkart.aesop.serializer.model.UserPreferencesInfo;
@@ -33,6 +27,11 @@ import com.netflix.zeno.serializer.common.ListSerializer;
 import com.netflix.zeno.serializer.common.MapSerializer;
 import com.netflix.zeno.serializer.common.SetSerializer;
 import com.netflix.zeno.serializer.common.StringSerializer;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * The <code>UserInfoSerializer</code> class is a sub-type of {@link NFTypeSerializer} for the root example model type {@link UserInfo}.

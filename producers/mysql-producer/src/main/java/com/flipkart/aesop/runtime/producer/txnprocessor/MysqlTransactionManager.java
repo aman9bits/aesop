@@ -15,12 +15,12 @@
  */
 package com.flipkart.aesop.runtime.producer.txnprocessor;
 
-import java.util.List;
-import java.util.Map;
-
 import com.google.code.or.binlog.BinlogEventV4Header;
 import com.google.code.or.common.glossary.Row;
 import com.linkedin.databus.core.DbusOpcode;
+
+import java.util.List;
+import java.util.Map;
 /**
  * <code>MysqlTransactionManager>/code> defines contracts specific for Mysql transactions. Inherits contracts from {@link TransactionProcessor} and {@link SourceProcessor} 
  * @author Shoury B

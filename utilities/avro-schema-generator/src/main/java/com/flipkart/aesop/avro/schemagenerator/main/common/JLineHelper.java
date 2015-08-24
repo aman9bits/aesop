@@ -1,11 +1,11 @@
 package com.flipkart.aesop.avro.schemagenerator.main.common;
 
-import java.io.IOException;
-import java.util.List;
-
 import jline.Completor;
 import jline.ConsoleReader;
 import jline.SimpleCompletor;
+
+import java.io.IOException;
+import java.util.List;
 
 public class JLineHelper
 {

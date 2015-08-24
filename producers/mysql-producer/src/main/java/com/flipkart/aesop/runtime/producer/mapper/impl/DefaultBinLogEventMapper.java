@@ -16,21 +16,20 @@
 
 package com.flipkart.aesop.runtime.producer.mapper.impl;
 
-import java.util.Comparator;
-import java.util.List;
-
-import org.apache.avro.Schema;
-import org.apache.avro.generic.GenericData;
-import org.apache.avro.generic.GenericRecord;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.producer.mapper.BinLogEventMapper;
 import com.google.code.or.binlog.BinlogEventV4Header;
 import com.google.code.or.common.glossary.Column;
 import com.google.code.or.common.glossary.Row;
 import com.linkedin.databus.core.DbusOpcode;
 import com.linkedin.databus2.schemas.utils.SchemaHelper;
+import org.apache.avro.Schema;
+import org.apache.avro.generic.GenericData;
+import org.apache.avro.generic.GenericRecord;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * <code>DefaultBinLogEventMapper</code> maps binlog events to avro generic record.

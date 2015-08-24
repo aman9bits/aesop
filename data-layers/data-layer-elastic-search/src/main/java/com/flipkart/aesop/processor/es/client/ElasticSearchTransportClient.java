@@ -21,6 +21,7 @@ import org.elasticsearch.common.settings.ImmutableSettings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.trpr.platform.core.impl.logging.LogFactory;
 import org.trpr.platform.core.spi.logging.Logger;
+
 import java.io.File;
 import java.net.InetAddress;
 import java.net.UnknownHostException;

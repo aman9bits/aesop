@@ -15,15 +15,11 @@
 
 package com.flipkart.aesop.mapper.config.implementation;
 
+import com.flipkart.aesop.mapper.config.MapperConfig;
+import com.typesafe.config.*;
+
 import java.io.File;
 import java.util.concurrent.ConcurrentHashMap;
-
-import com.flipkart.aesop.mapper.config.MapperConfig;
-import com.typesafe.config.Config;
-import com.typesafe.config.ConfigFactory;
-import com.typesafe.config.ConfigList;
-import com.typesafe.config.ConfigObject;
-import com.typesafe.config.ConfigValue;
 
 /**
  * Implementation of {@link MapperConfig} specific to HOCON-config.

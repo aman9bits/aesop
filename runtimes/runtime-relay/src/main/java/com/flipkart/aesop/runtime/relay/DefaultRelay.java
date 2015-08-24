@@ -15,14 +15,6 @@
  */
 package com.flipkart.aesop.runtime.relay;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
-
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.config.ProducerRegistration;
 import com.flipkart.aesop.runtime.metrics.MetricsCollector;
 import com.flipkart.aesop.runtime.producer.AbstractEventProducer;
@@ -36,6 +28,13 @@ import com.linkedin.databus2.relay.DatabusRelayMain;
 import com.linkedin.databus2.relay.config.PhysicalSourceStaticConfig;
 import com.linkedin.databus2.schemas.SchemaRegistryService;
 import com.linkedin.databus2.schemas.SourceIdNameRegistry;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * The <code>DefaultRelay</code> class defines behavior of a default Databus Relay. Provides methods to register

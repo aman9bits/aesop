@@ -1,14 +1,10 @@
 package com.flipkart.aesop.avro.schemagenerator.mysql;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import com.flipkart.aesop.avro.schemagenerator.data.TableRecord;
+
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.flipkart.aesop.avro.schemagenerator.data.TableRecord;
 
 /**
  * <code> MysqlUtils </code> utils to fetch info from mysql database

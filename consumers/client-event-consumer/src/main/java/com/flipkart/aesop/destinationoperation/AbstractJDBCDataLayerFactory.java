@@ -15,13 +15,12 @@
 
 package com.flipkart.aesop.destinationoperation;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.sql.DataSource;
-
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
+import javax.sql.DataSource;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Abstract Data Layer Factory for the factories which create data layers which use JDBC to interact with the

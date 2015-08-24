@@ -1,10 +1,10 @@
 package com.flipkart.aesop.sample.client.common.utils;
 
-import java.math.BigDecimal;
-
 import org.apache.avro.util.Utf8;
 import org.trpr.platform.core.impl.logging.LogFactory;
 import org.trpr.platform.core.spi.logging.Logger;
+
+import java.math.BigDecimal;
 
 /**
  * <code>AvroToMysqlMapper</code> provides mapping of data from avro data type to mysql data type.

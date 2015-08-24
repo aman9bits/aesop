@@ -15,12 +15,11 @@
  */
 package com.flipkart.aesop.serializer.stateengine;
 
-import java.util.List;
-
-import org.apache.avro.generic.GenericRecord;
-
 import com.netflix.zeno.diff.TypeDiff;
 import com.netflix.zeno.serializer.SerializerFactory;
+import org.apache.avro.generic.GenericRecord;
+
+import java.util.List;
 
 /**
  * The <code>DiffChangeEventMapper</code> maps information contained in the Zeno {@link TypeDiff} to Databus change events of type {@link GenericRecord}.

@@ -15,15 +15,14 @@
  */
 package com.flipkart.aesop.runtime.producer.diff;
 
-import org.apache.avro.generic.GenericRecord;
-import org.springframework.util.Assert;
-
 import com.flipkart.aesop.runtime.producer.AbstractCallbackEventProducer;
 import com.flipkart.aesop.runtime.producer.AbstractEventProducer;
 import com.flipkart.aesop.runtime.producer.ReadEventCycleSummary;
 import com.flipkart.aesop.serializer.stateengine.DiffInterpreter;
 import com.linkedin.databus2.producers.EventCreationException;
 import com.netflix.zeno.fastblob.FastBlobStateEngine;
+import org.apache.avro.generic.GenericRecord;
+import org.springframework.util.Assert;
 
 /**
  * <code>DiffEventProducer</code> is a sub-type of {@link AbstractEventProducer} that interprets change events by loading snapshots and deltas onto a 

@@ -12,34 +12,13 @@
  */
 package com.flipkart.aesop.runtime.producer.avro;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
-import org.apache.avro.Schema;
-import org.apache.avro.generic.GenericDatumWriter;
-import org.apache.avro.generic.GenericRecord;
-import org.apache.avro.io.Encoder;
-import org.apache.avro.io.EncoderFactory;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.producer.mapper.BinLogEventMapper;
 import com.flipkart.aesop.runtime.producer.mapper.impl.DefaultBinLogEventMapper;
 import com.flipkart.aesop.runtime.producer.mapper.impl.ORToAvroMapper;
 import com.google.code.or.binlog.BinlogEventV4Header;
 import com.google.code.or.common.glossary.Column;
 import com.google.code.or.common.glossary.Row;
-import com.linkedin.databus.core.DatabusRuntimeException;
-import com.linkedin.databus.core.DbusConstants;
-import com.linkedin.databus.core.DbusEventBufferAppendable;
-import com.linkedin.databus.core.DbusEventInfo;
-import com.linkedin.databus.core.DbusEventKey;
-import com.linkedin.databus.core.DbusOpcode;
-import com.linkedin.databus.core.UnsupportedKeyException;
+import com.linkedin.databus.core.*;
 import com.linkedin.databus.core.monitoring.mbean.DbusEventsStatisticsCollector;
 import com.linkedin.databus2.core.DatabusException;
 import com.linkedin.databus2.producers.EventCreationException;
@@ -49,6 +28,20 @@ import com.linkedin.databus2.producers.ds.PrimaryKeySchema;
 import com.linkedin.databus2.schemas.NoSuchSchemaException;
 import com.linkedin.databus2.schemas.SchemaId;
 import com.linkedin.databus2.schemas.utils.SchemaHelper;
+import org.apache.avro.Schema;
+import org.apache.avro.generic.GenericDatumWriter;
+import org.apache.avro.generic.GenericRecord;
+import org.apache.avro.io.Encoder;
+import org.apache.avro.io.EncoderFactory;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <code>MysqlAvroEventManager</code> deals with avro events and provides avro specific functionalities

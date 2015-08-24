@@ -15,16 +15,15 @@
  */
 package com.flipkart.aesop.runtime.producer.impl;
 
-import java.io.File;
-
+import com.flipkart.aesop.runtime.producer.spi.SCNGenerator;
+import com.linkedin.databus.client.pub.CheckpointPersistenceProvider;
+import com.linkedin.databus.client.pub.FileSystemCheckpointPersistenceProvider;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 import org.trpr.platform.runtime.common.RuntimeVariables;
 
-import com.flipkart.aesop.runtime.producer.spi.SCNGenerator;
-import com.linkedin.databus.client.pub.CheckpointPersistenceProvider;
-import com.linkedin.databus.client.pub.FileSystemCheckpointPersistenceProvider;
+import java.io.File;
 
 /**
  * The Spring factory bean for creating file based {@link CheckpointPersistenceProvider}. Used by relay producer implementations for 

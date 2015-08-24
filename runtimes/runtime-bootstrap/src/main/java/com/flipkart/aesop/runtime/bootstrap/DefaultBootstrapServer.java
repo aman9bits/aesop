@@ -15,11 +15,11 @@
  */
 package com.flipkart.aesop.runtime.bootstrap;
 
-import java.io.IOException;
-
 import com.linkedin.databus.bootstrap.server.BootstrapHttpServer;
 import com.linkedin.databus.bootstrap.server.BootstrapServerStaticConfig;
 import com.linkedin.databus2.core.DatabusException;
+
+import java.io.IOException;
 
 /**
  * The <code>DefaultBootstrapServer</code> class defines behavior of a default Databus Bootstrap server i.e. serves change data snapshots that may be used

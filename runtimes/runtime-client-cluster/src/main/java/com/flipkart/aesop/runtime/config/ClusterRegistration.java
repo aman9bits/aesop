@@ -13,15 +13,14 @@
 
 package com.flipkart.aesop.runtime.config;
 
-import java.util.List;
-
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.util.Assert;
-
 import com.flipkart.aesop.runtime.clusterclient.DefaultPartitionListener;
 import com.linkedin.databus.client.pub.DbusClusterConsumerFactory;
 import com.linkedin.databus.client.pub.DbusPartitionListener;
 import com.linkedin.databus.client.pub.DbusServerSideFilterFactory;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.util.Assert;
+
+import java.util.List;
 
 /**
  * <code>ClusterRegistration</code> holds information for registering to a Databus Client Cluster

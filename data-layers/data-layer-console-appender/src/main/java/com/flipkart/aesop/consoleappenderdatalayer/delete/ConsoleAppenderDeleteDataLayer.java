@@ -8,14 +8,6 @@ import com.linkedin.databus.core.DbusOpcode;
 import org.trpr.platform.core.impl.logging.LogFactory;
 import org.trpr.platform.core.spi.logging.Logger;
 
-import java.io.*;
-import java.net.*;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-
 
 /**
  * Sample Delete Data Layer. Persists {@link DbusOpcode#DELETE} events to Log File.

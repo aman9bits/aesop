@@ -1,26 +1,11 @@
 package com.flipkart.aesop.avro.schemagenerator.main;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.GnuParser;
-import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.OptionBuilder;
-import org.apache.commons.cli.Options;
+import com.flipkart.aesop.avro.schemagenerator.mysql.DataSourceConfig;
+import org.apache.commons.cli.*;
 import org.apache.commons.lang.StringUtils;
 
-import com.flipkart.aesop.avro.schemagenerator.mysql.DataSourceConfig;
+import java.io.*;
+import java.util.*;
 
 /**
  * <code>SchemaGeneratorCli</code> command line interface for the schema generator

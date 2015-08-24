@@ -15,15 +15,14 @@
 
 package com.flipkart.aesop.event;
 
-import java.util.Map;
-import java.util.Set;
-
-import org.apache.avro.Schema;
-
 import com.linkedin.databus.client.pub.DbusEventDecoder;
 import com.linkedin.databus.core.DbusEvent;
 import com.linkedin.databus.core.DbusOpcode;
 import com.linkedin.databus2.core.DatabusException;
+import org.apache.avro.Schema;
+
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Event Factory Interface to be implemented by the factory classes which generate events, or extend the Abstract

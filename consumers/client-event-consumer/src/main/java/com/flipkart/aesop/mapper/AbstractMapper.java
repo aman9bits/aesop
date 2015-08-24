@@ -15,16 +15,16 @@
 
 package com.flipkart.aesop.mapper;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 import com.flipkart.aesop.event.AbstractEvent;
 import com.flipkart.aesop.event.implementation.DestinationEventFactory;
 import com.flipkart.aesop.mapper.config.MapperConfig;
 import com.flipkart.aesop.mapper.eventGroupFilter.EventGroupFinder;
 import com.flipkart.aesop.mapper.implementation.DefaultMapperImpl;
 import com.flipkart.aesop.mapper.implementation.MapperType;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Adapter class for {@link Mapper}.

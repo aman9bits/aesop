@@ -15,9 +15,9 @@
  */
 package com.flipkart.aesop.runtime.producer;
 
-import java.util.List;
-
 import org.apache.avro.generic.GenericRecord;
+
+import java.util.List;
 
 /**
  * The <code>ReadEventCycleSummary</code> is a container for change events from a read cycle.

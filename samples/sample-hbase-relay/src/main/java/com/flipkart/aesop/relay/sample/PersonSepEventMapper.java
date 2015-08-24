@@ -15,17 +15,16 @@
  */
 package com.flipkart.aesop.relay.sample;
 
-import java.util.LinkedList;
-
 import com.flipkart.aesop.events.sample.person.FieldChange;
 import com.flipkart.aesop.events.sample.person.Person;
+import com.flipkart.aesop.runtime.producer.hbase.SepEventMapper;
+import com.ngdata.sep.SepEvent;
 import org.apache.hadoop.hbase.KeyValue;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.trpr.platform.core.impl.logging.LogFactory;
 import org.trpr.platform.core.spi.logging.Logger;
 
-import com.flipkart.aesop.runtime.producer.hbase.SepEventMapper;
-import com.ngdata.sep.SepEvent;
+import java.util.LinkedList;
 
 
 /**

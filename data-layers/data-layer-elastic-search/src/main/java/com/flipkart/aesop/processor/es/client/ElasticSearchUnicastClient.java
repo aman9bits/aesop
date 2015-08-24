@@ -19,9 +19,11 @@ import org.elasticsearch.common.settings.ImmutableSettings;
 import org.elasticsearch.node.Node;
 import org.trpr.platform.core.impl.logging.LogFactory;
 import org.trpr.platform.core.spi.logging.Logger;
+
 import java.io.File;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+
 import static org.elasticsearch.node.NodeBuilder.nodeBuilder;
 
 /**

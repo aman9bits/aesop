@@ -1,8 +1,8 @@
 package com.flipkart.aesop.avro.schemagenerator.data;
 
-import java.util.List;
-
 import org.apache.commons.lang.StringUtils;
+
+import java.util.List;
 
 /**
  * <code>TableRecord</code> is record which will be mapped to json to generate schema

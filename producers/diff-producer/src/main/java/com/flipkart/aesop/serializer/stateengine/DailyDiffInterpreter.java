@@ -15,22 +15,17 @@
  */
 package com.flipkart.aesop.serializer.stateengine;
 
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FilenameFilter;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-
+import com.flipkart.aesop.serializer.SerializerConstants;
+import com.netflix.zeno.fastblob.FastBlobStateEngine;
+import com.netflix.zeno.fastblob.io.FastBlobReader;
 import org.apache.avro.generic.GenericRecord;
 import org.trpr.platform.core.impl.logging.LogFactory;
 import org.trpr.platform.core.spi.logging.Logger;
 
-import com.flipkart.aesop.serializer.SerializerConstants;
-import com.netflix.zeno.fastblob.FastBlobStateEngine;
-import com.netflix.zeno.fastblob.io.FastBlobReader;
+import java.io.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * The <code>DailyDiffInterpreter</code> is a sub-type of the {@link DiffInterpreter} that interprets change events from daily snapshots followed by 

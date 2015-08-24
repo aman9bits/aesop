@@ -15,16 +15,12 @@
  */
 package com.flipkart.aesop.runtime.spring.web;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.flipkart.aesop.runtime.config.ProducerRegistration;
+import com.flipkart.aesop.runtime.impl.registry.ServerContainerRegistry;
+import com.flipkart.aesop.runtime.relay.DefaultRelay;
+import com.flipkart.aesop.runtime.spi.admin.RuntimeConfigService;
+import com.linkedin.databus2.core.container.netty.ServerContainer;
+import com.linkedin.databus2.relay.config.LogicalSourceConfig;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -35,12 +31,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.flipkart.aesop.runtime.config.ProducerRegistration;
-import com.flipkart.aesop.runtime.impl.registry.ServerContainerRegistry;
-import com.flipkart.aesop.runtime.relay.DefaultRelay;
-import com.flipkart.aesop.runtime.spi.admin.RuntimeConfigService;
-import com.linkedin.databus2.core.container.netty.ServerContainer;
-import com.linkedin.databus2.relay.config.LogicalSourceConfig;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * The <code>RelayController</code> class is a Spring MVC Controller that displays Relay Metrics. Also provides

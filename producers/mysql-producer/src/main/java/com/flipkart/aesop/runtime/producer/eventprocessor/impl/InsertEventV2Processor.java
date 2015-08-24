@@ -1,13 +1,12 @@
 package com.flipkart.aesop.runtime.producer.eventprocessor.impl;
 
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.producer.eventlistener.OpenReplicationListener;
 import com.flipkart.aesop.runtime.producer.eventprocessor.BinLogEventProcessor;
 import com.google.code.or.binlog.BinlogEventV4;
 import com.google.code.or.binlog.impl.event.WriteRowsEventV2;
 import com.linkedin.databus.core.DbusOpcode;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
 
 /**
  * The <code>InsertEvent2Processor</code> processes WriteRowsEventV2 from source. This event is received if there is any

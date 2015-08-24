@@ -16,13 +16,12 @@
 
 package com.flipkart.aesop.runtime.config;
 
-import java.util.List;
-
+import com.flipkart.aesop.runtime.client.DefaultClient;
+import com.linkedin.databus.client.consumer.AbstractDatabusCombinedConsumer;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 
-import com.flipkart.aesop.runtime.client.DefaultClient;
-import com.linkedin.databus.client.consumer.AbstractDatabusCombinedConsumer;
+import java.util.List;
 
 /**
  * <code>ConsumerRegistration</code> holds information for registering a Databus {@link AbstractDatabusCombinedConsumer} with the

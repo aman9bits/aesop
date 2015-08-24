@@ -15,14 +15,6 @@
  */
 package com.flipkart.aesop.serializer.serializers;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-
-import org.codehaus.jackson.map.ObjectMapper;
-import org.springframework.core.serializer.support.SerializationFailedException;
-
 import com.flipkart.aesop.serializer.model.UserAddressInfo;
 import com.netflix.zeno.fastblob.record.schema.FastBlobSchema;
 import com.netflix.zeno.fastblob.record.schema.FastBlobSchema.FieldType;
@@ -31,6 +23,13 @@ import com.netflix.zeno.serializer.NFSerializationRecord;
 import com.netflix.zeno.serializer.NFTypeSerializer;
 import com.netflix.zeno.serializer.common.MapSerializer;
 import com.netflix.zeno.serializer.common.StringSerializer;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.springframework.core.serializer.support.SerializationFailedException;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * The <code>UserAddressInfoSerializer</code> class is a sub-type of {@link NFTypeSerializer} for the root example model type {@link UserAddressInfo}

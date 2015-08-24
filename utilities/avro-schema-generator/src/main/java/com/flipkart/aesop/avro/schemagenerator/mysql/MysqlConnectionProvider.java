@@ -1,15 +1,14 @@
 package com.flipkart.aesop.avro.schemagenerator.mysql;
 
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+
+import javax.management.RuntimeErrorException;
+import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-
-import javax.management.RuntimeErrorException;
-import javax.sql.DataSource;
-
-import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 /**
  * <code> MysqlConnectionProvider </code> provides database connection object for the given dataSourceId.

@@ -15,18 +15,17 @@
  */
 package com.flipkart.aesop.runtime.producer;
 
-import org.apache.avro.generic.GenericRecord;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.util.Assert;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.linkedin.databus.core.DatabusComponentStatus;
 import com.linkedin.databus.core.DbusEventInfo;
 import com.linkedin.databus.core.DbusEventKey;
 import com.linkedin.databus.core.DbusOpcode;
 import com.linkedin.databus2.producers.EventCreationException;
 import com.linkedin.databus2.schemas.utils.SchemaHelper;
+import org.apache.avro.generic.GenericRecord;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.util.Assert;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
 
 
 /**

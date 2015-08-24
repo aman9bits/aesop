@@ -15,9 +15,9 @@
  */
 package com.flipkart.aesop.runtime.config;
 
-import java.util.Properties;
-
 import org.trpr.platform.core.PlatformException;
+
+import java.util.Properties;
 
 /**
  * <code>BootstrapProducerConfig</code> holds Databus configuration properties for a Relay Client instance that acts as a Bootstrap

@@ -15,19 +15,18 @@
  */
 package com.flipkart.aesop.runtime.producer.impl;
 
-import java.io.IOException;
-import java.util.Arrays;
-
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.util.Assert;
-import org.trpr.platform.core.impl.logging.LogFactory;
-import org.trpr.platform.core.spi.logging.Logger;
-
 import com.flipkart.aesop.runtime.producer.spi.SCNGenerator;
 import com.linkedin.databus.client.pub.CheckpointPersistenceProvider;
 import com.linkedin.databus.core.Checkpoint;
 import com.linkedin.databus.core.DatabusRuntimeException;
 import com.linkedin.databus.core.DbusClientMode;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.util.Assert;
+import org.trpr.platform.core.impl.logging.LogFactory;
+import org.trpr.platform.core.spi.logging.Logger;
+
+import java.io.IOException;
+import java.util.Arrays;
 
 /**
  * <code>GenerationalSCNGenerator</code> is an implementation of the {@link SCNGenerator} that handles mastership change 

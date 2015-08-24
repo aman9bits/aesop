@@ -15,12 +15,12 @@
 
 package com.flipkart.aesop.event;
 
+import com.linkedin.databus.core.DbusOpcode;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import com.linkedin.databus.core.DbusOpcode;
 
 /**
  * Abstract Class which implements functions of {@link Event} class.
