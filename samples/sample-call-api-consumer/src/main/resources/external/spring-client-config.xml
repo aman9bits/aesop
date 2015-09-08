@@ -69,16 +69,16 @@
           class="com.flipkart.aesop.event.implementation.DestinationEventFactory" />
 
     <bean id="sourceEventFactory"
-          class="com.flipkart.aesop.event.implementation.SourceEventFactory" />
+          class="com.flipkart.aesop.event.implementation.SourceEventFactoryWithTimestamp" />
 
     <bean id="apiCallerUpsertDataLayer"
           class="com.flipkart.aesop.apicallerdatalayer.upsert.ApiCallerUpsertDataLayerFactory">
-        <property name="url" value="http://localhost:8086/count" />
+        <property name="url" value="http://flo-marvin-backend.stage.ch.flipkart.com/workflows/aesop_marvin/start" />
     </bean>
 
     <bean id="apiCallerDeleteDataLayer"
           class="com.flipkart.aesop.apicallerdatalayer.delete.ApiCallerDeleteDataLayerFactory">
-        <property name="url" value="http://localhost:8086/count" />
+        <property name="url" value="http://flo-marvin-backend.stage.ch.flipkart.com/workflows/aesop_marvin/start" />
     </bean>
 
     <bean id="sampleClient"
@@ -100,7 +100,7 @@
                     </property>
                     <property name="logicalSources">
                         <list value-type="java.lang.String">
-                            <value>com.flipkart.aesop.events.ortest.Person</value>
+                            <value>pz.shipping-lite.ShipmentStatusHistories</value>
                         </list>
                     </property>
                 </bean>
@@ -135,7 +135,7 @@
                     <property name="relayPort" value="25021" />
                     <property name="relayLogicalSourceNames">
                         <list value-type="java.lang.String">
-                            <value>com.flipkart.aesop.events.ortest.Person</value>
+                            <value>pz.shipping-lite.ShipmentStatusHistories</value>
                         </list>
                     </property>
                 </bean>
