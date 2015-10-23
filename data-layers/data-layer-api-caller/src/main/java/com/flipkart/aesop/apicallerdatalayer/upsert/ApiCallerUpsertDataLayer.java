@@ -16,6 +16,7 @@ import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.Iterator;
 
 /**
  * Sample Upsert Data Layer. Persists {@link DbusOpcode#UPSERT} events to Logs.
@@ -27,8 +28,10 @@ public class ApiCallerUpsertDataLayer extends UpsertDestinationStoreProcessor
 	/** Logger for this class*/
     private static final Logger LOGGER = LogFactory.getLogger(ApiCallerUpsertDataLayer.class);
     private URL url;
-    public ApiCallerUpsertDataLayer(URL url_path) {
+    private JSONObject headers;
+    public ApiCallerUpsertDataLayer(URL url_path, JSONObject headers) {
         this.url=url_path;
+        this.headers=headers;
     }
 
     @Override
@@ -41,8 +44,12 @@ public class ApiCallerUpsertDataLayer extends UpsertDestinationStoreProcessor
             con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
             con.setRequestProperty("Content-Type", "application/json");
             con.setRequestProperty("Accept", "application/json");
+            Iterator<String> it = headers.keys();
+            while(it.hasNext()){
+                String header = it.next();
+                con.setRequestProperty(header,headers.get(header).toString());
+            }
             JSONObject param =new JSONObject();
-            param.put("action","upsert");
             Object[] keyset = event.getFieldMapPair().keySet().toArray();
             Object[] values = event.getFieldMapPair().values().toArray();
             for(int i=0;i<event.getFieldMapPair().size();i++)

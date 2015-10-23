@@ -1,5 +1,7 @@
 package com.flipkart.aesop.apicallerdatalayer.delete;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.beans.factory.FactoryBean;
 
 import java.net.MalformedURLException;
@@ -10,9 +12,10 @@ import java.net.URL;
  */
 public class ApiCallerDeleteDataLayerFactory implements FactoryBean<ApiCallerDeleteDataLayer> {
     private URL url;
+    private JSONObject headers;
     public ApiCallerDeleteDataLayer getObject() throws Exception
     {
-        return new ApiCallerDeleteDataLayer(url);
+        return new ApiCallerDeleteDataLayer(url,headers);
     }
 
     public Class<?> getObjectType()
@@ -29,6 +32,13 @@ public class ApiCallerDeleteDataLayerFactory implements FactoryBean<ApiCallerDel
         try {
             this.url = new URL(url);
         } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+    }
+    public void setHeaders(String headers){
+        try {
+            this.headers=new JSONObject(headers);
+        } catch (JSONException e) {
             e.printStackTrace();
         }
     }

@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.util.Iterator;
 
 /**
  * Created by aman.gupta on 12/08/15.
@@ -21,8 +22,10 @@ public class ApiCallerDeleteDataLayer extends DeleteDestinationStoreProcessor {
 
     private static final Logger LOGGER = LogFactory.getLogger(ApiCallerDeleteDataLayer.class);
     private URL url;
-    public ApiCallerDeleteDataLayer(URL url) {
+    private JSONObject headers;
+    public ApiCallerDeleteDataLayer(URL url, JSONObject headers) {
         this.url=url;
+        this.headers=headers;
     }
 
     @Override
@@ -35,8 +38,12 @@ public class ApiCallerDeleteDataLayer extends DeleteDestinationStoreProcessor {
             con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
             con.setRequestProperty("Content-Type", "application/json");
             con.setRequestProperty("Accept", "application/json");
+            Iterator<String> it = headers.keys();
+            while(it.hasNext()){
+                String header = it.next();
+                con.setRequestProperty(header,headers.get(header).toString());
+            }
             JSONObject param =new JSONObject();
-            param.put("action","delete");
             Object[] keyset = event.getFieldMapPair().keySet().toArray();
             Object[] values = event.getFieldMapPair().values().toArray();
             for(int i=0;i<event.getFieldMapPair().size();i++)

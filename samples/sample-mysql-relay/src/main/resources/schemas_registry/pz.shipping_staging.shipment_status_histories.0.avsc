@@ -1,0 +1,52 @@
+{
+  "name" : "shipment_status_histories",
+  "type" : "record",
+  "doc" : "Auto-generated Avro schema for shipment_status_histories. Generated at Sep 25, 2015 04:10:09 PM IST",
+  "namespace" : "shipping_staging",
+  "meta" : "pk=id",
+  "fields" : [ {
+    "name" : "id",
+    "type" : [ "long", "null" ],
+    "meta" : "dbFieldName=id;dbFieldPosition=1;dbFieldType=bigint"
+  }, {
+    "name" : "shipment_id",
+    "type" : [ "long", "null" ],
+    "meta" : "dbFieldName=shipment_id;dbFieldPosition=2;dbFieldType=bigint"
+  }, {
+    "name" : "old_status",
+    "type" : [ "string", "null" ],
+    "meta" : "dbFieldName=old_status;dbFieldPosition=3;dbFieldType=varchar"
+  }, {
+    "name" : "location",
+    "type" : [ "string", "null" ],
+    "meta" : "dbFieldName=location;dbFieldPosition=4;dbFieldType=varchar"
+  }, {
+    "name" : "remarks",
+    "type" : [ "string", "null" ],
+    "meta" : "dbFieldName=remarks;dbFieldPosition=5;dbFieldType=varchar"
+  }, {
+    "name" : "created_at",
+    "type" : [ "long", "null" ],
+    "meta" : "dbFieldName=created_at;dbFieldPosition=6;dbFieldType=datetime"
+  }, {
+    "name" : "updated_at",
+    "type" : [ "long", "null" ],
+    "meta" : "dbFieldName=updated_at;dbFieldPosition=7;dbFieldType=datetime"
+  }, {
+    "name" : "new_status",
+    "type" : [ "string", "null" ],
+    "meta" : "dbFieldName=new_status;dbFieldPosition=8;dbFieldType=varchar"
+  }, {
+    "name" : "status_type",
+    "type" : [ "string", "null" ],
+    "meta" : "dbFieldName=status_type;dbFieldPosition=9;dbFieldType=varchar"
+  }, {
+    "name" : "status_date",
+    "type" : [ "long", "null" ],
+    "meta" : "dbFieldName=status_date;dbFieldPosition=10;dbFieldType=datetime"
+  }, {
+    "name" : "updated_by",
+    "type" : [ "string", "null" ],
+    "meta" : "dbFieldName=updated_by;dbFieldPosition=11;dbFieldType=varchar"
+  } ]
+}
