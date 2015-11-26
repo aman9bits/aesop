@@ -74,13 +74,13 @@
     <bean id="apiCallerUpsertDataLayer"
           class="com.flipkart.aesop.apicallerdatalayer.upsert.ApiCallerUpsertDataLayerFactory">
         <property name="url" value="http://flo-marvin-backend.stage.ch.flipkart.com/workflows/aesop_marvin/start" />
-        <property name="headers" value="{'MARVIN_CLIENT_ID':'sample_client_id','MARVIN_REF_ID':'sample_ref_id','MARVIN_WORKFLOW_IDEMPOTENCY':false,'MARVIN_IDEMPOTENCY_DURATION':60}" />
+        <property name="headers" value="{'MARVIN_CLIENT_ID':'shipping-lite-secondary-datastore','MARVIN_REF_ID':'$parentSrId','MARVIN_WORKFLOW_IDEMPOTENCY':true,'MARVIN_IDEMPOTENCY_DURATION':60}" />
     </bean>
 
     <bean id="apiCallerDeleteDataLayer"
           class="com.flipkart.aesop.apicallerdatalayer.delete.ApiCallerDeleteDataLayerFactory">
         <property name="url" value="http://flo-marvin-backend.stage.ch.flipkart.com/workflows/aesop_marvin/start" />
-        <property name="headers" value="{'MARVIN_CLIENT_ID':'sample_client_id','MARVIN_REF_ID':'sample_ref_id','MARVIN_WORKFLOW_IDEMPOTENCY':false,'MARVIN_IDEMPOTENCY_DURATION':60}" />
+        <property name="headers" value="{'MARVIN_CLIENT_ID':'shipping-lite-secondary-datastore','MARVIN_REF_ID':'$parentSrId','MARVIN_WORKFLOW_IDEMPOTENCY':true,'MARVIN_IDEMPOTENCY_DURATION':60}" />
     </bean>
 
     <bean id="sampleClient"
@@ -102,7 +102,7 @@
                     </property>
                     <property name="logicalSources">
                         <list value-type="java.lang.String">
-                            <value>pz.shipping_staging.shipment_status_histories</value>
+                            <value>pz.shipping-lite.ShipmentStatusHistories</value>
                         </list>
                     </property>
                 </bean>
@@ -137,7 +137,7 @@
                     <property name="relayPort" value="25021" />
                     <property name="relayLogicalSourceNames">
                         <list value-type="java.lang.String">
-                            <value>pz.shipping_staging.shipment_status_histories</value>
+                            <value>pz.shipping-lite.ShipmentStatusHistories</value>
                         </list>
                     </property>
                 </bean>

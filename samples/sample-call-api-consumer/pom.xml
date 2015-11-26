@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.flipkart.aesop</groupId>
-    <artifactId>callAPI</artifactId>
+    <artifactId>sample-call-api-consumer</artifactId>
 
     <dependencies>
         <dependency>
@@ -120,7 +120,7 @@
                                     <fileset dir="target/classes/scripts" />
                                 </copy>
                                 <copy
-                                        file="target/callAPI-${project.version}.jar"
+                                        file="target/sample-call-api-consumer-${project.version}.jar"
                                         toDir="distribution/lib" overwrite="true" />
                                 <copy file="target/classes/project.properties"
                                       tofile="distribution/resources/external/project.properties.snapshot"

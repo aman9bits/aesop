@@ -1,7 +1,7 @@
 {
   "name" : "ShipmentStatusHistories",
   "type" : "record",
-  "doc" : "Auto-generated Avro schema for ShipmentStatusHistories. Generated at Sep 09, 2015 11:31:57 AM IST",
+  "doc" : "Auto-generated Avro schema for ShipmentStatusHistories. Generated at Oct 23, 2015 06:03:36 PM IST",
   "namespace" : "shipping-lite",
   "meta" : "pk=id",
   "fields" : [ {
@@ -48,5 +48,17 @@
     "name" : "updatedAt",
     "type" : [ "long", "null" ],
     "meta" : "dbFieldName=updatedAt;dbFieldPosition=11;dbFieldType=datetime"
+  }, {
+    "name" : "secondaryStatus",
+    "type" : [ "string", "null" ],
+    "meta" : "dbFieldName=secondaryStatus;dbFieldPosition=12;dbFieldType=varchar"
+  }, {
+    "name" : "statusType",
+    "type" : [ "string", "null" ],
+    "meta" : "dbFieldName=statusType;dbFieldPosition=13;dbFieldType=varchar"
+  }, {
+    "name" : "updatedBy",
+    "type" : [ "string", "null" ],
+    "meta" : "dbFieldName=updatedBy;dbFieldPosition=14;dbFieldType=varchar"
   } ]
 }

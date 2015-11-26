@@ -37,6 +37,13 @@ public class ApiCallerUpsertDataLayer extends UpsertDestinationStoreProcessor
     @Override
 	protected ConsumerCallbackResult upsert(AbstractEvent event) {
         try {
+            JSONObject param =new JSONObject();
+            Object[] keyset = event.getFieldMapPair().keySet().toArray();
+            Object[] values = event.getFieldMapPair().values().toArray();
+            for(int i=0;i<event.getFieldMapPair().size();i++)
+            {
+                param.put(String.valueOf(keyset[i]),String.valueOf(values[i]));
+            }
             final String USER_AGENT = "Mozilla/5.0";
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("POST");
@@ -47,14 +54,11 @@ public class ApiCallerUpsertDataLayer extends UpsertDestinationStoreProcessor
             Iterator<String> it = headers.keys();
             while(it.hasNext()){
                 String header = it.next();
-                con.setRequestProperty(header,headers.get(header).toString());
-            }
-            JSONObject param =new JSONObject();
-            Object[] keyset = event.getFieldMapPair().keySet().toArray();
-            Object[] values = event.getFieldMapPair().values().toArray();
-            for(int i=0;i<event.getFieldMapPair().size();i++)
-            {
-                param.put(String.valueOf(keyset[i]),String.valueOf(values[i]));
+                String value = headers.get(header).toString();
+                if(value.charAt(0)=='$'){
+                    value = param.get(value.substring(1)).toString();
+                }
+                con.setRequestProperty(header,value);
             }
             // Send post request
             con.setDoOutput(true);
