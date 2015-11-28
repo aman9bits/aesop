@@ -29,14 +29,15 @@ public class ApiCallerUpsertDataLayer extends UpsertDestinationStoreProcessor
     private static final Logger LOGGER = LogFactory.getLogger(ApiCallerUpsertDataLayer.class);
     private URL url;
     private JSONObject headers;
-    public ApiCallerUpsertDataLayer(URL url_path, JSONObject headers) {
-        this.url=url_path;
-        this.headers=headers;
+    public ApiCallerUpsertDataLayer(URL url, JSONObject headers) {
+        this.url = url;
+        this.headers = headers;
     }
 
     @Override
 	protected ConsumerCallbackResult upsert(AbstractEvent event) {
         try {
+            /*
             JSONObject param =new JSONObject();
             Object[] keyset = event.getFieldMapPair().keySet().toArray();
             Object[] values = event.getFieldMapPair().values().toArray();
@@ -44,6 +45,8 @@ public class ApiCallerUpsertDataLayer extends UpsertDestinationStoreProcessor
             {
                 param.put(String.valueOf(keyset[i]),String.valueOf(values[i]));
             }
+            */
+            JSONObject param = new JSONObject(event.getFieldMapPair());
             final String USER_AGENT = "Mozilla/5.0";
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("POST");

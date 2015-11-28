@@ -24,13 +24,14 @@ public class ApiCallerDeleteDataLayer extends DeleteDestinationStoreProcessor {
     private URL url;
     private JSONObject headers;
     public ApiCallerDeleteDataLayer(URL url, JSONObject headers) {
-        this.url=url;
-        this.headers=headers;
+        this.url = url;
+        this.headers = headers;
     }
 
     @Override
     protected  ConsumerCallbackResult delete(AbstractEvent event) {
         try {
+            /*
             JSONObject param =new JSONObject();
             Object[] keyset = event.getFieldMapPair().keySet().toArray();
             Object[] values = event.getFieldMapPair().values().toArray();
@@ -38,6 +39,8 @@ public class ApiCallerDeleteDataLayer extends DeleteDestinationStoreProcessor {
             {
                 param.put(String.valueOf(keyset[i]),String.valueOf(values[i]));
             }
+            */
+            JSONObject param = new JSONObject(event.getFieldMapPair());
             final String USER_AGENT = "Mozilla/5.0";
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("POST");
